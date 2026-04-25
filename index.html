@@ -1,32 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloe - Como podemos te ajudar?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        :root {
+            --primary: #1A237E; /* Azul escuro Veloe */
+            --secondary: #00E5FF; /* Ciano Veloe */
+        }
+        .bg-veloe-blue { background-color: #1A237E; }
+        .text-veloe-blue { color: #1A237E; }
+        .bg-veloe-cyan { background-color: #00E5FF; }
+        .text-veloe-cyan { color: #00E5FF; }
+        .border-veloe-cyan:hover { border-color: #00E5FF; }
+        .shadow-veloe:hover { shadow-color: rgba(0, 229, 255, 0.2); }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project">
-    <meta name="author" content="Lovable" />
+    <!-- Header -->
+    <header class="bg-veloe-blue relative z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-veloe-cyan flex items-center justify-center">
+                    <span class="text-veloe-blue font-extrabold text-base">V</span>
+                </div>
+                <span class="text-xl font-bold text-white tracking-tight">veloe</span>
+            </div>
+            <button class="text-white p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
 
-    <!-- TODO: Update og:title to match your application name -->
-    
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5e8552a6-e739-4122-9cb2-fc2da28e99a8/id-preview-42db25e3--235ddc92-de4d-42ec-8c25-e891ff2c73f6.lovable.app-1775746646952.png">
+    <!-- Hero Section -->
+    <section class="bg-veloe-blue pb-16 pt-10 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                    Como podemos<br>te ajudar?
+                </h1>
+                <p class="mt-3 text-white/70 text-base md:text-lg max-w-md">
+                    Selecione o assunto abaixo e fale direto com a gente pelo WhatsApp.
+                </p>
+            </div>
+            <div class="flex-shrink-0">
+                <!-- Imagem representativa da Tag Veloe -->
+                <div class="w-56 md:w-64 h-32 md:h-40 bg-veloe-cyan rounded-2xl flex items-center justify-center shadow-2xl transform rotate-3">
+                    <div class="bg-veloe-blue text-white px-4 py-2 rounded font-bold text-xl">veloe</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5e8552a6-e739-4122-9cb2-fc2da28e99a8/id-preview-42db25e3--235ddc92-de4d-42ec-8c25-e891ff2c73f6.lovable.app-1775746646952.png">
-    <meta property="og:title" content="Lovable App">
-  <meta name="twitter:title" content="Lovable App">
-  <meta property="og:description" content="Lovable Generated Project">
-  <meta name="twitter:description" content="Lovable Generated Project">
-  <script type="module" crossorigin src="/assets/index-B0fBsL3G.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-HYiL99s5.css">
-<script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script></head>
+    <!-- Grid de Opções -->
+    <section class="max-w-4xl mx-auto px-4 -mt-8 pb-16 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            
+            <!-- Ativar Tag -->
+            <button class="group aspect-square bg-white rounded-2xl border border-gray-200 flex flex-col items-center justify-center gap-3 p-4 shadow-sm transition-all duration-200 hover:border-veloe-cyan hover:shadow-lg hover:-translate-y-1 active:scale-95">
+                <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center transition-colors group-hover:bg-veloe-cyan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-gray-600 group-hover:text-veloe-blue">
+                        <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
+                        <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                    </svg>
+                </div>
+                <span class="text-sm font-semibold text-gray-800 text-center leading-tight">Ativar Tag</span>
+            </button>
 
-  <body>
-    <div id="root"></div>
-  </body>
+            <!-- Trocar Plano -->
+            <button class="group aspect-square bg-white rounded-2xl border border-gray-200 flex flex-col items-center justify-center gap-3 p-4 shadow-sm transition-all duration-200 hover:border-veloe-cyan hover:shadow-lg hover:-translate-y-1 active:scale-95">
+                <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center transition-colors group-hover:bg-veloe-cyan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-gray-600 group-hover:text-veloe-blue">
+                        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                        <path d="M21 3v5h-5"></path>
+                        <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                        <path d="M8 16H3v5"></path>
+                    </svg>
+                </div>
+                <span class="text-sm font-semibold text-gray-800 text-center leading-tight">Trocar Plano</span>
+            </button>
+
+            <!-- Minha Conta -->
+            <button class="group aspect-square bg-white rounded-2xl border border-gray-200 flex flex-col items-center justify-center gap-3 p-4 shadow-sm transition-all duration-200 hover:border-veloe-cyan hover:shadow-lg hover:-translate-y-1 active:scale-95">
+                <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center transition-colors group-hover:bg-veloe-cyan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-gray-600 group-hover:text-veloe-blue">
+                        <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                        <line x1="2" x2="22" y1="10" y2="10"></line>
+                    </svg>
+                </div>
+                <span class="text-sm font-semibold text-gray-800 text-center leading-tight">Minha Conta</span>
+            </button>
+
+            <!-- Tire Dúvidas -->
+            <button class="group aspect-square bg-white rounded-2xl border border-gray-200 flex flex-col items-center justify-center gap-3 p-4 shadow-sm transition-all duration-200 hover:border-veloe-cyan hover:shadow-lg hover:-translate-y-1 active:scale-95">
+                <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center transition-colors group-hover:bg-veloe-cyan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-gray-600 group-hover:text-veloe-blue">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                        <path d="M12 17h.01"></path>
+                    </svg>
+                </div>
+                <span class="text-sm font-semibold text-gray-800 text-center leading-tight">Tire Dúvidas</span>
+            </button>
+
+            <!-- Rastrear Tag -->
+            <button class="group aspect-square bg-white rounded-2xl border border-gray-200 flex flex-col items-center justify-center gap-3 p-4 shadow-sm transition-all duration-200 hover:border-veloe-cyan hover:shadow-lg hover:-translate-y-1 active:scale-95">
+                <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center transition-colors group-hover:bg-veloe-cyan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-gray-600 group-hover:text-veloe-blue">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
+                        <path d="M15 18H9"></path>
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
+                        <circle cx="17" cy="18" r="2"></circle>
+                        <circle cx="7" cy="18" r="2"></circle>
+                    </svg>
+                </div>
+                <span class="text-sm font-semibold text-gray-800 text-center leading-tight">Rastrear Tag</span>
+            </button>
+
+            <!-- Fale Conosco -->
+            <button class="group aspect-square bg-white rounded-2xl border border-gray-200 flex flex-col items-center justify-center gap-3 p-4 shadow-sm transition-all duration-200 hover:border-veloe-cyan hover:shadow-lg hover:-translate-y-1 active:scale-95">
+                <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center transition-colors group-hover:bg-veloe-cyan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-gray-600 group-hover:text-veloe-blue">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <span class="text-sm font-semibold text-gray-800 text-center leading-tight">Fale Conosco</span>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-6 text-center bg-white">
+        <p class="text-sm text-gray-500">© 2005 - 2026 Veloe · Facilitando seus pedágios</p>
+    </footer>
+
+</body>
 </html>
